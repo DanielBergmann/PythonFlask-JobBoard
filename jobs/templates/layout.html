@@ -1,7 +1,7 @@
+{% from _macros.html import show_job, show_jobs with context %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Job Board</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
@@ -13,7 +13,7 @@
           <div class="content">
             {% block content %}
             {% endblock %}
-
+            <h1>content</h1>
         </div>
     </div>
 
